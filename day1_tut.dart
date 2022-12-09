@@ -194,7 +194,7 @@ String'''; // """This is also true"""
   print(names);
   var girl = [];
 
-  //Update the list vlaue
+  //! Update the list vlaue
   girl.add("Reena");
   girl.add("Hena");
   girl.add("Nisha");
@@ -206,7 +206,7 @@ String'''; // """This is also true"""
   list.replaceRange(0, 4, [1, 2, 3, 4]); //? From 0 to less than index value
   print(list);
 
-  //Removing elements from a list
+  //! Removing elements from a list
   list.removeLast();
   print(list);
   list.removeAt(1);
@@ -214,7 +214,7 @@ String'''; // """This is also true"""
   list.removeRange(0, 3);
   print(list);
 
-  //Function predefined
+  //! List Properties {Function predefined}
   print("Lenght: ${list.length}");
   print("Reversed : ${list.reversed}");
   print("First : ${list.first}");
@@ -230,5 +230,100 @@ String'''; // """This is also true"""
   ls.add("Sonam");
   print(ls);
   print(ls.runtimeType);
+
+  //! Insert List into another List
+  //Spread Operator
+  var women = ["Sonam", "Rani", "Kareena", "Ananya"];
+  var men = ["Ram", "Karan"];
+  var gabbarwithmen = ["Gabbar", ...men];
+  print(gabbarwithmen);
+  var people = ["Gabbar", ...women, ...men];
+  print(people);
+
+  //! List add() in empty list
+  var students = [];
+  students.add("Reena");
+  students.add("Neha");
+  students.add("Komal");
+  print(students);
+  print(students.runtimeType);
+
+  //! Set
+  var lst = [11, 2, 3, 3, 3]; //Same value can also be stored in set
+  var set = <String>{
+    "Sonam",
+    "Rani",
+    "Kareena",
+    "Ananya"
+  }; //For Strict Datatype
+  print(set.runtimeType);
+
+  var set1 = {"Sonam", "Rani", "Kareena", "Ananya", 2, 45.50};
+  print(set1);
+  print(set1.runtimeType);
+
+  //! Empty Set
+  // var st = {};//It's Map Not a Set
+  var st = <int>{};
+  print(st);
+  print(st.runtimeType);
+  Set set3 = {};
+  Set<String> set4 = {};
+
+  //! Add items to set
+  var p = <String>{};
+  print(p.runtimeType);
+  p.add("Ram");
+  p.add("Reena");
+  print(p);
+  var st5 = {1, 2, 3, 1, 2, 2};
+  print(st5); //Only Unique Value will be printed
+
+  //! Map
+  var addres = {'name': "Vinay Sharma", "city": "Itwa", "state": "UP"};
+  print(addres);
+  print(addres.runtimeType);
+  Map<String, String> ar = {
+    //Map Keyword is compulsory
+    //Whatever
+  };
+  var product = {10: "Mobile", 20: "Laptop", 30: "Keyboard"};
+  // Map <int,String>product = {10: "Mobile",20:"Laptop",30:"Keyboard"};   //Similar
+
+  //! Empty Map
+  var ad = Map(); //Map Cunstructor
+  print(ad);
+  print(ad.runtimeType);
+
+  Map<String, String> ad1 = Map();
+  print(ad1);
+  print(ad1.runtimeType);
+
+  var ad2 = {};
+  print(ad2);
+  print(ad2.runtimeType);
+
+  //! Add Item to Map
+  var ad3 = {};
+  print(ad3);
+  print(ad3.runtimeType);
+  ad3["name"] = "Sonam";
+  ad3["city"] = "Mumbai";
+  print(ad3);
+
+  //! Access elemets of Map
+  print(ad3["name"]);
+  print(ad3["city"]);
+
+  //! Properties of Map
+  var ad5 = {"name": "Rohan", "city": "Mumbai", "state": "Maharashta"};
+  print(ad5.runtimeType);
+  print(ad5.length);
+  print(ad5.isEmpty);
+  print(ad5.isNotEmpty);
+  print(ad5.keys);//Important
+  print(ad5.values);//Important
+  print(ad5.containsKey('name'));
+  print(ad5.containsValue('Mumbai'));
   
 }
