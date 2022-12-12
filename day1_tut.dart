@@ -321,10 +321,67 @@ String'''; // """This is also true"""
   print(ad5.length);
   print(ad5.isEmpty);
   print(ad5.isNotEmpty);
-  print(ad5.keys);//Important
-  print(ad5.values);//Important
+  print(ad5.keys); //Important
+  print(ad5.values); //Important
   print(ad5.containsKey('name'));
   print(ad5.containsValue('Mumbai'));
 
-  
+  //! Control flow statements
+  var isLogin = true;
+  if (isLogin) {
+    print("Welcome Sonam");
+  }
+  var a1 = 20;
+  if (a1 == 10) {
+    print("Value of a is $a1");
+  } else {
+    print("Not 10");
+  }
+
+  //! Loops
+  //for
+  var students1 = ["Sonam", "Rahul", "Sohan"];
+  for (var i = 0; i < students1.length; i++) {
+    print(students1[i]);
+  }
+  // while
+  var n = 1;
+  while (n <= 5) {
+    print("Number $n");
+    n++;
+  }
+  var students2 = ["Ram ", "Geta", "Sani"];
+  var i = 0;
+  while (i < students2.length) {
+    print(students2[i]);
+    i++;
+  }
+  // var isFetching = true;
+  // while (isFetching) {
+  //   print("Data Fetching....");
+  // }
+  //DO while loop
+  var v = 1;
+  do {
+    print("Number $v");
+    v++;
+  } while (v <= 5);
+  //For - in loop
+  var stud = ["rohan", "sohan", "Reena"];
+  for (var stu in stud) {
+    print(
+        stu); //List ke elements baari baari se aate hain stu me and print ho jate hain
+  }
+  var sst = {"Sekha", 'Mahdvi', "Riya"};
+  for (var stu in sst) {
+    print(stu);
+  }
+  var add = {"name": "Sikha", "city": "Agra", "state": "Uttar Pradesh"};
+  for (var key in add.keys) {
+    print(key);
+  }
+  for (var value in add.values) {
+    print(value);
+  }
+  //For each loop
 }
